@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 구글에서 slick이라고 검색하여 해당프로그램을 다운가능 --> 
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slide_slick.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/slick.js"></script>
+
+    <script lang="java">
+        $(document).ready(function(){
+            $(".move").slick({
+                autoplay: true,
+                // 기본값으로 3초후에 넘어가고 그림에 마우스를 올리면 멈춘다
+                autoplayspeed: 3000,
+                dots: true,
+                // 이미지슬라이드 수만큼 버튼이 생김
+                // arrows: false
+                // pre, next버튼 안보이게 하기
+                // slidesToShow:2,
+                // 보일 이미지 수를 2장으로 하기
+                // slidesToScroll:2,
+                // 이미지 4개를 2묶음으로 슬라이드하여 버튼이 2개 생김
+                // vertical:true,
+                // 보이는 이미지를 옆이 아닌 세로로 보이게 함
+                // fade:true
+                // 나타나는 효과
+            });// .move.slick
+
+            $(".view").slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: true,
+                dots: true,
+            });// .view.slick
+
+            $(".face").slick({
+                autoplay: true,
+                slidesToShow: 5,
+                // slidesToShow 보여지는 이미지의 수
+                slidesToScroll: 5,
+                // 이미지 5개를 한묶음으로 해서 슬라이드 시키겠다는 뜻
+                dots: true,
+            });// .face.slick
+
+            
+            $(".face_1").slick({
+                autoplay: true,
+                slidesToShow: 5,
+                initialSlide: 5,
+                // 처음 보여질 슬라이드 번호가 5번부터
+                centerMode: true,
+                centerPadding: "100px",
+                pauseOnFocus: true,
+                // 기본값
+                pauseOnHover: true
+                // 기본값
+            });// .face.slick
+        })// jQuery끝
+    </script>
+</head>
+<body>
+    <div class="slide_img">
+        <ul class="move">
+            <li><a href="#"><img src="source/main_visual05.jpg" alt="main5"></a></li>
+            <li><a href="#"><img src="source/main_visual06.jpg" alt="main6"></a></li>
+            <li><a href="#"><img src="source/main_visual07.jpg" alt="main7"></a></li>
+            <li><a href="#"><img src="source/main_visual08.jpg" alt="main8"></a></li>
+        </ul><!-- move -->
+    </div><!-- slide_img -->
+
+    <div class="main_view">
+        <div class="view">
+            <div><a href="#"><img src="source/hollys01.jpg" alt="h1"></a></div>
+            <div><a href="#"><img src="source/hollys02.jpg" alt="h2"></a></div>
+            <div><a href="#"><img src="source/hollys03.jpg" alt="h3"></a></div>
+            <div><a href="#"><img src="source/hollys04.jpg" alt="h4"></a></div>
+        </div><!-- view -->
+    </div><!-- main_view -->
+
+    <div class="face_img">
+        <div class="face">
+            <div><img src="source/normal_01.png" alt="n1"></div>
+            <div><img src="source/normal_02.png" alt="n2"></div>
+            <div><img src="source/normal_03.png" alt="n3"></div>
+            <div><img src="source/normal_04.png" alt="n4"></div>
+            <div><img src="source/normal_05.png" alt="n5"></div>
+            <div><img src="source/normal_06.png" alt="n6"></div>
+            <div><img src="source/normal_07.png" alt="n7"></div>
+            <div><img src="source/normal_08.png" alt="n8"></div>
+            <div><img src="source/normal_09.png" alt="n9"></div>
+            <div><img src="source/normal_10.png" alt="n10"></div>
+            <div><img src="source/normal_11.png" alt="n11"></div>
+            <div><img src="source/normal_12.png" alt="n12"></div>
+            <div><img src="source/normal_13.png" alt="n13"></div>
+        </div><!-- face -->
+    </div><!-- face_img -->
+
+    <div class="face_img">
+        <div class="face_1">
+            <div><img src="source/normal_01.png" alt="n1"></div>
+            <div><img src="source/normal_02.png" alt="n2"></div>
+            <div><img src="source/normal_03.png" alt="n3"></div>
+            <div><img src="source/normal_04.png" alt="n4"></div>
+            <div><img src="source/normal_05.png" alt="n5"></div>
+            <div><img src="source/normal_06.png" alt="n6"></div>
+            <div><img src="source/normal_07.png" alt="n7"></div>
+            <div><img src="source/normal_08.png" alt="n8"></div>
+            <div><img src="source/normal_09.png" alt="n9"></div>
+            <div><img src="source/normal_10.png" alt="n10"></div>
+            <div><img src="source/normal_11.png" alt="n11"></div>
+            <div><img src="source/normal_12.png" alt="n12"></div>
+            <div><img src="source/normal_13.png" alt="n13"></div>
+        </div><!-- face_1 -->
+    </div><!-- face_img -->
+</body>
+</html>
